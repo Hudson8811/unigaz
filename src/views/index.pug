@@ -1,0 +1,36 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	.main-inner
+		.container.center
+			.log-in
+				.log-in__title Вход
+				form.log-in__form.grid
+					.log-in__form-field
+						label.log-in__form-label Логин
+						input.log-in__form-text(type='text')
+					.log-in__form-field
+						label.log-in__form-label Пароль
+						input.log-in__form-text(type='text')
+					.log-in__buttons
+						input.log-in__buttons-submit-link.btn(type='submit' data-remodal-target='modal' value='Вход')
+						a.log-in__buttons-forgot(href='forgot/') Забыли пароль?
+					.log-in__recaptcha
+						img.log-in__recaptcha-img(src='img/recaptcha.svg' alt='')
+						.log-in__recaptcha-body
+							.g-recaptcha(data-sitekey='6LeQKWUfAAAAACet8bftuFb4Frtv7dvfb3PbmHAb')
+
+	.remodal.remodal--attention(data-remodal-id='modal' data-remodal-options='hashTracking: false, closeOnOutsideClick: true')
+		.modal-title Обратите внимание
+		.modal-text
+			p Клиент несет личную ответственность за выполняемые действия в личном кабинете, в том числе за оплату товаров.
+		button.btn.btn--remodal-confirm(data-remodal-action='confirm') Согласен

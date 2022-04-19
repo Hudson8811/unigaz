@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UNIGAS</title>
+	<base href="https://m5446.gitlab.io/unigaz/">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/remodal.css">
+	<link rel="stylesheet" href="css/remodal-default-theme.css">
+</head>
+
+<body>
+	<header class="container header_pa grid">
+		<div class="logo">
+			<img class="logo__img" src="img/logo-w.svg" alt="">
+		</div>
+		<div class="menu">
+			<ul class="menu__items">
+				<li class="menu__items-item"><a class="menu__items-item-link" href="catalog/">Каталог продукции</a></li>
+				<li class="menu__items-item"><a class="menu__items-item-link" href="lk.html">Информация</a></li>
+			</ul>
+		</div>
+		<div class="icons">
+			<ul class="icons__items">
+				<li class="icons__items-item">
+					<a class="icons__items-item-link" href="">
+						<img class="icons__items-item-img" src="img/user.svg" alt="">
+					</a>
+				</li>
+				<li class="icons__items-item">
+					<a class="icons__items-item-link" href="">
+						<img class="icons__items-item-img" src="img/cart.svg" alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="icons-2">
+			<ul class="icons-2__items">
+				<li class="icons-2__items-item">
+					<a class="icons-2__items-item-link" href="">
+						<img class="icons-2__items-item-img" src="img/logon.svg" alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="container-fullwidth top-bg">
+		<div class="top-bg__overlay"></div>
+		<div class="top-bg__overlay-2"></div>
+		<div class="container">
+			<h1 class="catalog-title">Каталог<br>продукции</h1>
+		</div>
+	</div>
+	<div class="container search grid">
+		<div class="search__title">
+			<h3 class="search__title-text">Поиск по котлам</h3>
+		</div>
+		<div class="search__form search__form_b-80">
+			<div class="search__form-field">
+				<input class="search__form-field-input" type="text">
+				<submit class="search__form-field-submit">Поиск</submit>
+			</div>
+		</div>
+
+	</div>
+	<div class="container catalog grid">
+		<div class="catalog__filter">
+			<input type="checkbox" class="catalog__filter-spoiler" id="spoilerid_1"><label for="spoilerid_1">
+				Производитель
+			</label>
+			<div class="catalog__filter-body">
+				<label class="catalog__filter-body-control">
+					Производитель 1
+					<input type="checkbox" class="catalog__filter-body-control-checkbox" />
+					<div class="catalog__filter-body-indicator"></div>
+				</label>
+				<label class="catalog__filter-body-control">
+					Производитель 2
+					<input type="checkbox" class="catalog__filter-body-control-checkbox" checked />
+					<div class="catalog__filter-body-indicator"></div>
+				</label>
+				<label class="catalog__filter-body-control">
+					Производитель 3
+					<input type="checkbox" class="catalog__filter-body-control-checkbox" />
+					<div class="catalog__filter-body-indicator"></div>
+				</label>
+				<label class="catalog__filter-body-control">
+					Производитель 4
+					<input type="checkbox" class="catalog__filter-body-control-checkbox" />
+					<div class="catalog__filter-body-indicator"></div>
+				</label>
+				<label class="catalog__filter-body-control">
+					Производитель 5
+					<input type="checkbox" class="catalog__filter-body-control-checkbox" />
+					<div class="catalog__filter-body-indicator"></div>
+				</label>
+				<label class="catalog__filter-body-control">
+					Производитель 6
+					<input type="checkbox" class="catalog__filter-body-control-checkbox" />
+					<div class="catalog__filter-body-indicator"></div>
+				</label>
+			</div>
+
+
+			<input type="checkbox" class="catalog__filter-spoiler" id="spoilerid_2"><label for="spoilerid_2">
+				Вид топлива
+			</label>
+			<div class="catalog__filter-body">
+				<label class="catalog__filter-body-control">
+					Основное топливо
+					<input type="checkbox" class="catalog__filter-body-control-checkbox" />
+					<div class="catalog__filter-body-indicator"></div>
+				</label>
+				<label class="catalog__filter-body-control">
+					Резервное
+					<input type="checkbox" class="catalog__filter-body-control-checkbox" checked />
+					<div class="catalog__filter-body-indicator"></div>
+				</label>
+			</div>
+		</div>
+		<div class="catalog__body">
+			<div class="not-found not-found_mt80">
+				<h1 class="not-found__title">Не найдена нужная модель котла?</h1>
+				<p class="not-found__desc">Отправьте запрос, и наши менеджеры свяжутся с вами для подбора необходимой модели</p>
+				<a class="not-found__button" data-remodal-target="modal" href="">Отправить запрос</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="remodal selection" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		<h1>Запрос на подбор горелки</h1>
+		<div class="selection ">
+			<div class="selection__form grid">
+				<div class="selection__form-field">
+					<label class="selection__form-label">Ваше имя</label>
+					<input class="selection__form-text" type="text" placeholder="Анастасия">
+				</div>
+				<div class="selection__form-field">
+					<label class="selection__form-label">Ваша фамилия</label>
+					<input class="selection__form-text" type="text" placeholder="Штофа">
+				</div>
+				<div class="selection__form-field">
+					<label class="selection__form-label">Ваш e-mail</label>
+					<input class="selection__form-text" type="text" placeholder="ivanov@ipau.ru">
+				</div>
+				<div class="selection__form-field">
+					<label class="selection__form-label">Ваш e-mail</label>
+					<input class="selection__form-text" type="text" placeholder="+ 7 (910) 000-00-00">
+				</div>
+			</div>
+			<div class="selection__form grid">
+				<div class="selection__form-field">
+					<label class="selection__form-label">Тип и модель котла</label>
+					<input class="selection__form-text" type="text" placeholder="WIRT Basis (Electro) 35">
+				</div>
+				<div class="selection__form-field">
+					<label class="selection__form-label">Мощность, кВт/произ-ть, кг/ч</label>
+					<input class="selection__form-text" type="text" placeholder="500">
+				</div>
+				<div class="selection__form-field">
+					<label class="selection__form-label">Город установки</label>
+					<input class="selection__form-text" type="text" placeholder="Прага">
+				</div>
+				<div class="selection__form-field">
+					<label class="selection__form-label">Давление газа</label>
+					<input class="selection__form-text" type="text" placeholder="452">
+				</div>
+			</div>
+			<br>
+			<div class="selection__form-field">
+				<label class="selection__form-label">Загрузите файл или изображение</label>
+				<div class="input-file">
+					<input class="input-file__text" type="file">
+				</div>
+			</div>
+
+		</div>
+		<br>
+		<br>
+		<button data-remodal-action="confirm" data-remodal-target="modal-2" class="remodal-confirm">Согласен</button>
+	</div>
+
+
+	<div class="remodal" data-remodal-id="modal-2" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		<h1>Заявка отправлена</h1>
+		<p>Спасибо, ваш заказ принят в обработку, менеджер свяжется с вами в ближайшее время</p>
+		<br>
+		<br>
+		<button data-remodal-action="confirm" class="remodal-confirm">Закрыть</button>
+	</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/remodal.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

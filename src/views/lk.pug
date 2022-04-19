@@ -1,0 +1,211 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+
+	.container.tabs
+		.tabs__title Личный кабинет
+		.tabs__items
+			input#tab1.tabs__items-tab-radio(type='radio' name='tab' checked='')
+			label.tabs__items-tab-button(for='tab1') История заказов
+			.tabs__items-tab-body
+				.container-compensator.onlymob
+					.hr
+				.content
+					.search__form.search__form--lk-history
+						.search__form-field
+							input.search__form-field-input(type='text' placeholder="Наименование котла")
+							submit.btn.btn--search-submit Поиск
+					.container-compensator.container-compensator--after-search-lk-history.onlymob
+						.hr
+					.history
+						.history__body
+							.history__body-headings.grid
+								.history__body-headings-item.history__body-headings-item_left
+									p.history__body-headings-item-text Дата
+								.history__body-headings-item
+									p.history__body-headings-item-text Название проекта
+								.history__body-headings-item
+									p.history__body-headings-item-text Котлы
+								.history__body-headings-item
+									p.history__body-headings-item-text Горелки
+								.history__body-headings-item
+									p.history__body-headings-item-text Сумма (EUR)
+								.history__body-headings-item
+									p.history__body-headings-item-text Статус заказа
+								.history__body-headings-item
+							.history__body-items.grid
+								.history__body-items-item.grid
+									.history__body-items-item-option.history__body-items-item-option0
+										p.history__body-items-item-option-text 19/10/2021
+									.history__body-items-item-option.history__body-items-item-option1
+										p.history__body-items-item-option-text Проект №1
+									.history__body-items-item-option.history__body-items-item-option2
+										p.history__body-items-item-option-text
+											| UNIMAT UT-L 12
+
+											| (15 000 кВт)
+									.history__body-items-item-option.history__body-items-item-option3
+										p.history__body-items-item-option-text R75A
+									.history__body-items-item-option.history__body-items-item-option4
+										p.history__body-items-item-option-text 49 563.00
+									.history__body-items-item-option.history__body-items-item-option5
+										p.history__body-items-item-option-text
+											span.history__body-items-item-option-text-check.history__body-items-item-option-text-check_red Оформлен
+									.history__body-items-item-download
+										a.history__body-items-item-download-link(href='docs/doc.pdf')
+											img.history__body-items-item-download-link-img(src='img/download.svg' alt='')
+							.history__body-items.grid
+								.history__body-items-item.grid
+									.history__body-items-item-option.history__body-items-item-option0
+										p.history__body-items-item-option-text 19/10/2021
+									.history__body-items-item-option.history__body-items-item-option1
+										p.history__body-items-item-option-text Проект №1
+									.history__body-items-item-option.history__body-items-item-option2
+										p.history__body-items-item-option-text
+											| UNIMAT UT-L 12
+
+											| (15 000 кВт)
+									.history__body-items-item-option.history__body-items-item-option3
+										p.history__body-items-item-option-text R75A
+									.history__body-items-item-option.history__body-items-item-option4
+										p.history__body-items-item-option-text 49 563.00
+									.history__body-items-item-option.history__body-items-item-option5
+										p.history__body-items-item-option-text
+											span.history__body-items-item-option-text-check Не оформлен
+									.history__body-items-item-download
+										a.history__body-items-item-download-link(href='')
+											img.history__body-items-item-download-link-img(src='img/download.svg' alt='')
+					.lk-tab-bottom
+						a.btn.btn--download-all-history(href='') Выгрузить заказы
+			input#tab2.tabs__items-tab-radio(type='radio' name='tab')
+			label.tabs__items-tab-button(for='tab2') Информация о клиенте
+			.tabs__items-tab-body
+				.container-compensator.onlymob
+					.hr
+				.content
+					.info.grid
+						.info__col
+							p.info__col-item
+								b.info__col-item-title Фамилия:
+								| 								Сидоров
+							p.info__col-item
+								b.info__col-item-title КПП:
+								| 								775353637
+							p.info__col-item
+								b.info__col-item-title БИК:
+								| 								000000000002
+						.info__col
+							p.info__col-item
+								b.info__col-item-title Имя:
+								| 								Александр
+							p.info__col-item
+								b.info__col-item-title ИНН:
+								| 								77777777
+							p.info__col-item
+								b.info__col-item-title Банк:
+								| 								Bank of America
+						.info__col
+							p.info__col-item
+								b.info__col-item-title Должность:
+							p.info__col-item
+								b.info__col-item-title Фактический адрес:
+								| 								Московская 1, Москва
+							p.info__col-item
+								b.info__col-item-title К/с:
+								| 								00000000000000002
+						.info__col
+							p.info__col-item
+								b.info__col-item-title Компания:
+								| 								ООО “ООО”
+							p.info__col-item
+								b.info__col-item-title Юридический адрес:
+								| 								Московская 1, Москва
+							p.info__col-item
+								b.info__col-item-title Р/с:
+								| 								00000000000000001
+
+					.lk-tab-bottom.lk-tab-bottom--left
+						a.btn.btn--download-all-history(href='' data-remodal-target='modal-2') Обновить данные
+			input#tab3.tabs__items-tab-radio(type='radio' name='tab')
+			label.tabs__items-tab-button(for='tab3') Сменить пароль
+			.tabs__items-tab-body
+				.container-compensator.onlymob
+					.hr
+				.content
+					.password
+						p.password__desc
+							| Внимание! Пароль должен составлять не менее 6 символов, состоять из цифр, латинских строчных и прописных букв
+						form.password__form(action='')
+							.password__form-field
+								label.password__form-field-label Текущий пароль
+								input.password__form-field-text(type='password')
+							.password__form-field
+								label.password__form-field-label Новый пароль
+								input.password__form-field-text(type='text')
+							.password__form-field
+								label.password__form-field-label Подтверждение пароля
+								input.password__form-field-text(type='text')
+
+							a.btn.btn--change-pass(href='' data-remodal-target='modal') Сменить пароль
+
+
+
+	.remodal.dialog(data-remodal-id='modal' data-remodal-options='hashTracking: false, closeOnOutsideClick: true')
+		.log-in
+			.log-in__title.log-in__title--small Пароль успешно изменен
+			form.log-in__form.grid
+				.log-in__buttons.log-in__buttons--center
+					a.btn(href='') Закрыть
+
+
+	.remodal.modal-form(data-remodal-id='modal-2' data-remodal-options='hashTracking: false, closeOnOutsideClick: true')
+		h3.modal-form__title Обновление данных
+
+		form.modal-form__body(action='')
+			.modal-form__body-fields.grid
+				.modal-form__body-fields-field
+					label.modal-form__body-fields-field-label Ваше имя
+					input.modal-form__body-fields-field-text(type='text')
+				.modal-form__body-fields-field
+					label.modal-form__body-fields-field-label Ваша фамилия
+					input.modal-form__body-fields-field-text(type='text')
+				.modal-form__body-fields-field
+					label.modal-form__body-fields-field-label КПП
+					input.modal-form__body-fields-field-text(type='text')
+				.modal-form__body-fields-field
+					label.modal-form__body-fields-field-label БИК
+					input.modal-form__body-fields-field-text(type='text')
+				.modal-form__body-fields-field
+					label.modal-form__body-fields-field-label ИНН
+					input.modal-form__body-fields-field-text(type='text')
+				.modal-form__body-fields-field
+					label.modal-form__body-fields-field-label Банк
+					input.modal-form__body-fields-field-text(type='text')
+				.modal-form__body-fields-field
+					label.modal-form__body-fields-field-label К/с
+					input.modal-form__body-fields-field-text(type='text')
+				.modal-form__body-fields-field
+					label.modal-form__body-fields-field-label Р/с
+					input.modal-form__body-fields-field-text(type='text')
+			.modal-form__body-fields
+				.modal-form__body-fields-field
+					label.modal-form__body-fields-field-label Компания
+					input.modal-form__body-fields-field-text(type='text')
+				.modal-form__body-fields-field
+					label.modal-form__body-fields-field-label Юридический адрес
+					input.modal-form__body-fields-field-text(type='text')
+				.modal-form__body-fields-field
+					label.modal-form__body-fields-field-label Фактический адрес
+					input.modal-form__body-fields-field-text(type='text')
+		button.remodal-confirm.modal-form__button(data-remodal-action='confirm') Отправить
+
+

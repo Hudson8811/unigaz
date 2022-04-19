@@ -1,0 +1,231 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	.container.card.grid
+		.card__title
+			.card__title-text Твердотопливный котел WIRT Basis (Electro) 35
+			p.card__title-article Артикул: Basis 35
+		.card__properties
+			ul.card__properties-items
+				li.card__properties-items-item
+					b.card__properties-items-item-title Максимальное рабочее давление:
+					| 					500 mbar (50 Pa)
+				li.card__properties-items-item
+					b.card__properties-items-item-title Диаметр:
+					| 					Rp 3/8 - Rp 1/2. DN 40 - DN 150
+				li.card__properties-items-item
+					b.card__properties-items-item-title Допуски:
+					| 					EN 88
+				li.card__properties-items-item
+					b.card__properties-items-item-title Ном. теплопроизводительность, кВт:
+					| 					1 850
+				li.card__properties-items-item
+					b.card__properties-items-item-title Ном. паропроизводительность, кг/ч:
+					| 					9,17
+				li.card__properties-items-item
+					b.card__properties-items-item-title Аэродинамическое сопротивление, мбар:
+					| 					88
+				li.card__properties-items-item
+					b.card__properties-items-item-title КПД при работе на природном газе, %:
+					| 					97
+				li.card__properties-items-item
+					b.card__properties-items-item-title КПД при работе на жидком топливе %:
+					| 					76
+			.card__properties-match
+				h3.card__properties-match-title Данные совпадают?
+				.card__properties-match-buttons.grid
+					.card__properties-match-buttons-button
+						a.card__properties-match-buttons-button-link.card__properties-match-buttons-button-link_bg(href='') Да
+					.card__properties-match-buttons-button
+						a.card__properties-match-buttons-button-link.card__properties-match-buttons-button-link_bor(href='') Нет
+		.card__image
+			img.card__image-img(src='img/card-product.svg' alt='')
+	.container.offered
+		.search.search_card.grid
+			.search__title.serch__title_ttn
+				h3.search__title-text Подходящие горелки
+			.search__form.search__form_jss.search__form--card
+				.search__form-field
+					input.search__form-field-input(type='text' placeholder="Поиск горелки")
+					submit.btn.btn--search-submit Поиск
+		.catalog__filter.catalog__filter--card
+			.catalog__filter-body.catalog__filter-body--card
+
+				label.catalog__filter-body-control.catalog__filter-body-control--card
+					input.catalog__filter-body-control-checkbox(type='checkbox')
+					span  газовые
+					.catalog__filter-body-indicator
+				label.catalog__filter-body-control.catalog__filter-body-control--card
+					input.catalog__filter-body-control-checkbox(type='checkbox' checked='')
+					span  дизельные
+					.catalog__filter-body-indicator
+				label.catalog__filter-body-control.catalog__filter-body-control--card
+					input.catalog__filter-body-control-checkbox(type='checkbox')
+					span  газ/дизель
+					.catalog__filter-body-indicator
+				label.catalog__filter-body-control.catalog__filter-body-control--card
+					input.catalog__filter-body-control-checkbox(type='checkbox')
+					span  основное топливо
+					.catalog__filter-body-indicator
+				label.catalog__filter-body-control.catalog__filter-body-control--card
+					input.catalog__filter-body-control-checkbox(type='checkbox')
+					span  резервное топливо
+					.catalog__filter-body-indicator
+		.table-products.table-products--card-prod
+			.table-products__item.table-products__item--card
+				.table-products__item-cell.table-products__item-cell--card
+					.table-products__item-image
+						img.table-products__item-image-img(src='img/table-product.svg' alt='')
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					p.table-products__item-option-text
+						span.table-products__item-option-text-title Тип
+						| 						NG35
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					p.table-products__item-option-text
+						span.table-products__item-option-text-title Модель
+						| 						M-.TN.S.xx.A.0.15
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					p.table-products__item-option-text
+						span.table-products__item-option-text-title Давление газа [макс, мбар]
+						| 						360
+
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					.btn Выбрать
+
+			.table-products__item.table-products__item--card
+				.table-products__item-cell.table-products__item-cell--card
+					.table-products__item-image
+						img.table-products__item-image-img(src='img/table-product.svg' alt='')
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					p.table-products__item-option-text
+						span.table-products__item-option-text-title Тип
+						| 						NG35
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					p.table-products__item-option-text
+						span.table-products__item-option-text-title Модель
+						| 						M-.TN.S.xx.A.0.15
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					p.table-products__item-option-text
+						span.table-products__item-option-text-title Давление газа [макс, мбар]
+						| 						360
+
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					.btn Выбрать
+			.table-products__item.table-products__item--card
+				.table-products__item-cell.table-products__item-cell--card
+					.table-products__item-image
+						img.table-products__item-image-img(src='img/table-product.svg' alt='')
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					p.table-products__item-option-text
+						span.table-products__item-option-text-title Тип
+						| 						NG35
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					p.table-products__item-option-text
+						span.table-products__item-option-text-title Модель
+						| 						M-.TN.S.xx.A.0.15
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					p.table-products__item-option-text
+						span.table-products__item-option-text-title Давление газа [макс, мбар]
+						| 						360
+
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					.btn Выбрать
+			.table-products__item.table-products__item--card
+				.table-products__item-cell.table-products__item-cell--card
+					.table-products__item-image
+						img.table-products__item-image-img(src='img/table-product.svg' alt='')
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					p.table-products__item-option-text
+						span.table-products__item-option-text-title Тип
+						| 						NG35
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					p.table-products__item-option-text
+						span.table-products__item-option-text-title Модель
+						| 						M-.TN.S.xx.A.0.15
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					p.table-products__item-option-text
+						span.table-products__item-option-text-title Давление газа [макс, мбар]
+						| 						360
+
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					.btn Выбрать
+			.table-products__item.table-products__item--card
+				.table-products__item-cell.table-products__item-cell--card
+					.table-products__item-image
+						img.table-products__item-image-img(src='img/table-product.svg' alt='')
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					p.table-products__item-option-text
+						span.table-products__item-option-text-title Тип
+						| 						NG35
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					p.table-products__item-option-text
+						span.table-products__item-option-text-title Модель
+						| 						M-.TN.S.xx.A.0.15
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					p.table-products__item-option-text
+						span.table-products__item-option-text-title Давление газа [макс, мбар]
+						| 						360
+
+				.table-products__item-cell.table-products__item-cell--card.table-products__item-option
+					.btn Выбрать
+
+		.not-found.not-found--card
+			.not-found__title Не нашли нужное топливо, комбинацию?
+			p.not-found__desc
+				| Отправьте нам запрос и мы подберем нужную горелку
+			a.btn.btn--not-found(data-remodal-target='modal' href='') Отправить запрос
+	//.remodal.selection(data-remodal-id='modal' data-remodal-options='hashTracking: false, closeOnOutsideClick: true')
+		button.remodal-close(data-remodal-action='close')
+		.prev-h1 Запрос на подбор горелки
+		.selection
+			.selection__form.grid
+				.selection__form-field
+					label.selection__form-label Ваше имя
+					input.selection__form-text(type='text' placeholder='Анастасия')
+				.selection__form-field
+					label.selection__form-label Ваша фамилия
+					input.selection__form-text(type='text' placeholder='Штофа')
+				.selection__form-field
+					label.selection__form-label Ваш e-mail
+					input.selection__form-text(type='text' placeholder='ivanov@ipau.ru')
+				.selection__form-field
+					label.selection__form-label Ваш e-mail
+					input.selection__form-text(type='text' placeholder='+ 7 (910) 000-00-00')
+			.selection__form.grid
+				.selection__form-field
+					label.selection__form-label Тип и модель котла
+					input.selection__form-text(type='text' placeholder='WIRT Basis (Electro) 35')
+				.selection__form-field
+					label.selection__form-label Мощность, кВт/произ-ть, кг/ч
+					input.selection__form-text(type='text' placeholder='500')
+				.selection__form-field
+					label.selection__form-label Город установки
+					input.selection__form-text(type='text' placeholder='Прага')
+				.selection__form-field
+					label.selection__form-label Давление газа
+					input.selection__form-text(type='text' placeholder='452')
+			br
+			.selection__form-field
+				label.selection__form-label Загрузите файл или изображение
+				.input-file
+					input.input-file__text(type='file')
+		br
+		br
+		button.remodal-confirm(data-remodal-action='confirm' data-remodal-target='modal-2') Согласен
+	.remodal(data-remodal-id='modal-2' data-remodal-options='hashTracking: false, closeOnOutsideClick: true')
+		button.remodal-close(data-remodal-action='close')
+		.prev-h1 Заявка отправлена
+		p
+			| Спасибо, ваш заказ принят в обработку, менеджер свяжется с вами в ближайшее время
+		br
+		br
+		button.remodal-confirm(data-remodal-action='confirm') Закрыть

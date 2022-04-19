@@ -1,0 +1,128 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+		const darkHeader=true;
+		const absoluteHeader=true;
+
+
+
+
+block main
+	.container-fullwidth.top-bg
+		.top-bg__overlay
+		.top-bg__overlay-2
+		.container
+			.catalog-title
+				| Каталог
+				br
+				| продукции
+	.main-inner.main-inner--v2
+		.container.search.grid
+			.search__title
+				h3.search__title-text Поиск по котлам
+			.search__form
+				.search__form-field
+					input.search__form-field-input(type='text' placeholder="Наименование котла")
+					submit.btn.btn--search-submit Поиск
+		.container.catalog
+			.catalog__filter
+				input#spoilerid_1.catalog__filter-spoiler(type='checkbox')
+				label(for='spoilerid_1')
+					|  Производитель
+				.catalog__filter-body
+					label.catalog__filter-body-control
+						span Производитель 1
+						input.catalog__filter-body-control-checkbox(type='checkbox')
+						.catalog__filter-body-indicator
+					label.catalog__filter-body-control
+						span Производитель 2
+						input.catalog__filter-body-control-checkbox(type='checkbox' checked='')
+						.catalog__filter-body-indicator
+					label.catalog__filter-body-control
+						span Производитель 3
+						input.catalog__filter-body-control-checkbox(type='checkbox')
+						.catalog__filter-body-indicator
+					label.catalog__filter-body-control
+						span Производитель 4
+						input.catalog__filter-body-control-checkbox(type='checkbox')
+						.catalog__filter-body-indicator
+					label.catalog__filter-body-control
+						span Производитель 5
+						input.catalog__filter-body-control-checkbox(type='checkbox')
+						.catalog__filter-body-indicator
+					label.catalog__filter-body-control
+						span Производитель 6
+						input.catalog__filter-body-control-checkbox(type='checkbox')
+						.catalog__filter-body-indicator
+				input#spoilerid_2.catalog__filter-spoiler(type='checkbox')
+				label(for='spoilerid_2')
+					| Вид топлива
+				.catalog__filter-body
+					label.catalog__filter-body-control
+						span Основное топливо
+						input.catalog__filter-body-control-checkbox(type='checkbox')
+						.catalog__filter-body-indicator
+					label.catalog__filter-body-control
+						span Резервное
+						input.catalog__filter-body-control-checkbox(type='checkbox' checked='')
+						.catalog__filter-body-indicator
+
+
+
+			.catalog__body
+				.not-found.not-found_mt80
+					.not-found__title Не найдена нужная модель котла?
+					p.not-found__desc
+						| Отправьте запрос, и наши менеджеры свяжутся с вами для подбора необходимой модели
+					a.btn.btn--not-found(data-remodal-target='modal' href='') Отправить запрос
+		//.remodal.selection(data-remodal-id='modal' data-remodal-options='hashTracking: false, closeOnOutsideClick: true')
+			button.remodal-close(data-remodal-action='close')
+			.prev-h1 Запрос на подбор горелки
+			.selection
+				.selection__form.grid
+					.selection__form-field
+						label.selection__form-label Ваше имя
+						input.selection__form-text(type='text' placeholder='Анастасия')
+					.selection__form-field
+						label.selection__form-label Ваша фамилия
+						input.selection__form-text(type='text' placeholder='Штофа')
+					.selection__form-field
+						label.selection__form-label Ваш e-mail
+						input.selection__form-text(type='text' placeholder='ivanov@ipau.ru')
+					.selection__form-field
+						label.selection__form-label Ваш e-mail
+						input.selection__form-text(type='text' placeholder='+ 7 (910) 000-00-00')
+				.selection__form.grid
+					.selection__form-field
+						label.selection__form-label Тип и модель котла
+						input.selection__form-text(type='text' placeholder='WIRT Basis (Electro) 35')
+					.selection__form-field
+						label.selection__form-label Мощность, кВт/произ-ть, кг/ч
+						input.selection__form-text(type='text' placeholder='500')
+					.selection__form-field
+						label.selection__form-label Город установки
+						input.selection__form-text(type='text' placeholder='Прага')
+					.selection__form-field
+						label.selection__form-label Давление газа
+						input.selection__form-text(type='text' placeholder='452')
+				br
+				.selection__form-field
+					label.selection__form-label Загрузите файл или изображение
+					.input-file
+						input.input-file__text(type='file')
+			br
+			br
+			button.remodal-confirm(data-remodal-action='confirm' data-remodal-target='modal-2') Согласен
+		.remodal(data-remodal-id='modal-2' data-remodal-options='hashTracking: false, closeOnOutsideClick: true')
+			button.remodal-close(data-remodal-action='close')
+			.prev-h1 Заявка отправлена
+			p
+				| Спасибо, ваш заказ принят в обработку, менеджер свяжется с вами в ближайшее время
+			br
+			br
+			button.remodal-confirm(data-remodal-action='confirm') Закрыть

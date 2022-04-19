@@ -1,0 +1,47 @@
+//.sh-burger
+	span
+
+//header.container.header.grid.mb80
+	.logo
+		img(class="logo__img", src="img/logo.svg", alt="")
+	.menu
+		ul(class="menu__items")
+			li(class="menu__items-item")
+				a(class="menu__items-item-link", href="catalog/") Каталог продукции
+			li(class="menu__items-item")
+				a(class="menu__items-item-link", href="lk.html") Информация
+	.icons
+		ul(class="icons__items")
+			li(class="icons__items-item")
+				a(class="icons__items-item-link", href="")
+					img(class="icons__items-item-img", src="img/user-b.svg", alt="")
+			li(class="icons__items-item")
+				a(class="icons__items-item-link", href="")
+					img(class="icons__items-item-img", src="img/cart-b.svg", alt="")
+	.icons-2
+		ul(class="icons-2__items")
+			li(class="icons-2__items-item")
+				a(class="icons-2__items-item-link", href="")
+					img(class="icons-2__items-item-img", src="img/logon-b.svg", alt="")
+header.site-header(class= darkHeader === true ? "site-header--dark-bg" : "" class= absoluteHeader === true ? "site-header--absolute" : "")
+	.container.container--sh
+		a.sh-logo(href="")
+			img.sh-logo__img.sh-logo__img--dark( src="img/logo.svg", alt="")
+			img.sh-logo__img.sh-logo__img--white( src="img/logo-w.svg", alt="")
+		.sh-menu
+			a.sh-menu__item.sh-menu__item--bold(href="") Каталог продукции
+			a.sh-menu__item(href="") Информация
+		.sh-right
+			a.sh-right__item.sh-right__item--cab(href="")
+				.sh-right__icon
+					include ../../img/user-b.svg
+
+			a.sh-right__item.sh-right__item--cart(href="")
+				.sh-right__icon
+					include ../../img/cart-b.svg
+					.sh-cart-circle
+						span 0
+
+			a.sh-right__item.sh-right__item--exit(href="")
+				.sh-right__icon
+					include ../../img/logon-b.svg

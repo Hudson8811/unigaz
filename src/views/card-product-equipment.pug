@@ -1,0 +1,95 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+
+	.container.card.grid
+		.card__title
+			.card__title-text M-.TN.S.xx.A.0.15
+			p.card__title-article Артикул
+		.card__properties
+			ul.card__properties-items
+				li.card__properties-items-item
+					b.card__properties-items-item-title Тип топлива:
+					| 					Тип 1
+				li.card__properties-items-item
+					b.card__properties-items-item-title Максимальное рабочее давление:
+					| 					500 mbar (50 Pa)
+			.card__price.card__price--eq
+				.card__price-checkbox
+					label.catalog__filter-body-control.catalog__filter-body-control--card-eq
+						span   С комплектующими
+						input.catalog__filter-body-control-checkbox(type='checkbox')
+						.catalog__filter-body-indicator.catalog__filter-body-indicator--right
+				p.card__price-old Цена:
+					span  € 300
+				p.card__price-discount Цена со скидкой:
+					span  € 250
+			.card__price-add-to-card
+				a.btn.btn--small-2(href='') Добавить в корзину
+		.card__image
+			img.card__image-img(src='img/card-product-1.svg' alt='')
+	.container.equipment
+		h3.equipment__title Комплектующие к горелке
+		.equipment__body
+			.equipment__body-headings
+				.equipment__body-headings-item
+					p.equipment__body-headings-item-text Наименование
+				.equipment__body-headings-item
+					p.equipment__body-headings-item-text Модель
+				.equipment__body-headings-item
+					p.equipment__body-headings-item-text Цена
+				.equipment__body-headings-item
+			.equipment__body-items
+				.equipment__body-items-item
+					.equipment__body-items-item-option
+						p.equipment__body-items-item-option-text Комплектующее 1
+					.equipment__body-items-item-option
+						p.equipment__body-items-item-option-text FRNG 5040
+					.equipment__body-items-item-option
+						p.equipment__body-items-item-option-text € 500
+					.equipment__body-items-item-option
+						label.catalog__filter-body-control
+							input.catalog__filter-body-control-checkbox(type='checkbox' checked='')
+							.catalog__filter-body-indicator.catalog__filter-body-indicator_single
+				.equipment__body-items-item
+					.equipment__body-items-item-option
+						p.equipment__body-items-item-option-text Комплектующее 1
+					.equipment__body-items-item-option
+						p.equipment__body-items-item-option-text FRNG 5040
+					.equipment__body-items-item-option
+						p.equipment__body-items-item-option-text € 500
+					.equipment__body-items-item-option
+						label.catalog__filter-body-control
+							input.catalog__filter-body-control-checkbox(type='checkbox')
+							.catalog__filter-body-indicator.catalog__filter-body-indicator_single
+				.equipment__body-items-item
+					.equipment__body-items-item-option
+						p.equipment__body-items-item-option-text Комплектующее 1
+					.equipment__body-items-item-option
+						p.equipment__body-items-item-option-text FRNG 5040
+					.equipment__body-items-item-option
+						p.equipment__body-items-item-option-text € 500
+					.equipment__body-items-item-option
+						label.catalog__filter-body-control
+							input.catalog__filter-body-control-checkbox(type='checkbox' checked='')
+							.catalog__filter-body-indicator.catalog__filter-body-indicator_single
+				.equipment__body-items-item
+					.equipment__body-items-item-option
+						p.equipment__body-items-item-option-text Комплектующее 1
+					.equipment__body-items-item-option
+						p.equipment__body-items-item-option-text FRNG 5040
+					.equipment__body-items-item-option
+						p.equipment__body-items-item-option-text € 500
+					.equipment__body-items-item-option
+						label.catalog__filter-body-control
+							input.catalog__filter-body-control-checkbox(type='checkbox')
+							.catalog__filter-body-indicator.catalog__filter-body-indicator_single

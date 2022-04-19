@@ -1,0 +1,317 @@
+.sh-burger {
+	position: relative;
+	display: none;
+	width: 34px;
+	height: 26px;
+	cursor: pointer;
+	transition-duration: .2s;
+
+	span,
+	span::before,
+	span::after {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 34px;
+		height: 2px;
+		margin-top: -1px;
+		margin-left: -17px;
+		background-color: #fff;
+	}
+
+	span::before,
+	span::after {
+		content: '';
+		transition: 0.2s;
+	}
+
+	span::before {
+		transform: translateY(-12px);
+	}
+
+	span::after {
+		transform: translateY(12px);
+	}
+
+	&--active {
+		background: #F5F6FB;
+
+		span {
+			height: 0;
+
+			&::before {
+				transform: rotate(45deg);
+				background: #323340;
+			}
+
+			&::after {
+				transform: rotate(-45deg);
+				background: #323340;
+			}
+		}
+	}
+}
+
+
+.site-header {
+	background: #fff;
+	padding: 26px 0;
+
+	@media screen and (max-width: 720px){
+		padding: 20px 0;
+
+	}
+	&--dark-bg {
+
+		.sh-logo {
+			&__img {
+				&--dark {
+					display: none;
+				}
+
+				&--white {
+					display: block;
+				}
+			}
+
+		}
+		.sh-menu {
+			&__item {
+				color: #fff;
+			}
+		}
+
+		.sh-right {
+			&__icon {
+				svg {
+					path{
+						stroke: #ffffff;
+					}
+				}
+			}
+
+		}
+
+		.sh-cart-circle {
+			background: #fff;
+			span {
+
+				color: #3F3F3F;}
+		}
+	}
+	&--absolute{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 99;
+		background: transparent;
+		background: rgba(0, 0, 0, 0);
+
+	}
+
+
+}
+
+.container--sh {
+	display: flex;
+	align-items: center;
+	@media screen and (max-width: 720px){
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+
+}
+
+.sh-logo {
+	height: 38px;
+	margin-right: 50px;
+	@media screen and (max-width: 720px){
+		height: 33px;
+
+		margin-right: 5px;
+	}
+
+	//mob-h32
+	img {
+		height: 100%;
+		width: auto;
+	}
+
+	&__img {
+
+		&--dark {}
+
+		&--white {
+			display: none;
+		}
+	}
+
+	&:hover {}
+
+	&:active {}
+
+	&:focus {}
+}
+
+.sh-menu {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	//margin-top: 5px;
+	@media screen and (max-width: 720px){
+		flex-grow: 0;
+		display: block;
+	}
+
+	&__item {
+		display: block;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 19px;
+		@media screen and (max-width: 720px){
+
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 16px;
+		}
+
+
+		/* Black */
+
+		color: #231F20;
+
+		&--bold {
+			font-weight: 600;
+			@media screen and (max-width: 720px){
+				font-weight: 400;
+
+			}
+		}
+
+		&:hover {}
+
+		&:active {}
+
+		&:focus {}
+
+		&+.sh-menu__item {
+			margin-left: 23px;
+			@media screen and (max-width: 720px){
+				margin-left: 0;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+.sh-right {
+	display: flex;
+	align-items: center;
+	margin-top: 5px;
+	margin-left: 10px;
+	@media screen and (max-width: 720px){
+		margin-top: -1px;
+
+	}
+
+	&__item {
+		position: relative;
+		display: block;
+
+		&--cab {}
+
+		&--cart {
+			margin-left: 30px;
+			@media screen and (max-width: 720px){
+				margin-left: 15px;
+
+			}
+		}
+
+		&--exit {
+			margin-left: 72px;
+			@media screen and (max-width: 720px){
+				margin-left: 20px;
+
+			}
+		}
+
+		&:hover {}
+
+		&:active {}
+
+		&:focus {}
+
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			left: -5px;
+			top: -5px;
+			@media screen and (max-width: 720px){
+				width: 25px;
+				height: 25px;
+				left: -5px;
+				top: -6px;
+			}
+		}
+	}
+
+	&__icon {
+		@media screen and (max-width: 720px){
+			height: 15px;
+			svg{
+				height: 100%;
+				width: auto;
+			}
+		}
+	}
+
+
+}
+
+
+.sh-cart-circle {
+	background: #000000;
+	min-width: 17px;
+	height: 17px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	left: 9px;
+	bottom: 5px;
+	padding: 0 3px;
+	@media screen and (max-width: 720px){
+
+		min-width: 13px;
+		height: 13px;
+		left: 7px;
+		bottom: 0px;
+	}
+
+	span {
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 1;
+		/* or 13px */
+
+		display: flex;
+		align-items: center;
+		text-align: center;
+		margin-bottom: -1px;
+
+		color: #FFFFFF;
+		@media screen and (max-width: 720px){
+			font-size: 9px;
+
+		}
+	}
+}

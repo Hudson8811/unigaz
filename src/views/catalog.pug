@@ -1,0 +1,122 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+		const darkHeader=true;
+		const absoluteHeader=true;
+
+
+
+
+block main
+	.container-fullwidth.top-bg
+		.top-bg__overlay
+		.top-bg__overlay-2
+		.container
+			.catalog-title
+				| Каталог
+				br
+				| продукции
+	.main-inner.main-inner--v2
+		.container.search.grid
+			.search__title
+				h3.search__title-text Поиск по котлам
+			.search__form
+				.search__form-field
+					input.search__form-field-input(type='text' placeholder="Наименование котла")
+					submit.btn.btn--search-submit Поиск
+		.container.catalog
+			.catalog__filter
+				input#spoilerid_1.catalog__filter-spoiler(type='checkbox')
+				label(for='spoilerid_1')
+					|  Производитель
+				.catalog__filter-body
+					label.catalog__filter-body-control
+						span Производитель 1
+						input.catalog__filter-body-control-checkbox(type='checkbox')
+						.catalog__filter-body-indicator
+					label.catalog__filter-body-control
+						span Производитель 2
+						input.catalog__filter-body-control-checkbox(type='checkbox' checked='')
+						.catalog__filter-body-indicator
+					label.catalog__filter-body-control
+						span Производитель 3
+						input.catalog__filter-body-control-checkbox(type='checkbox')
+						.catalog__filter-body-indicator
+					label.catalog__filter-body-control
+						span Производитель 4
+						input.catalog__filter-body-control-checkbox(type='checkbox')
+						.catalog__filter-body-indicator
+					label.catalog__filter-body-control
+						span Производитель 5
+						input.catalog__filter-body-control-checkbox(type='checkbox')
+						.catalog__filter-body-indicator
+					label.catalog__filter-body-control
+						span Производитель 6
+						input.catalog__filter-body-control-checkbox(type='checkbox')
+						.catalog__filter-body-indicator
+				input#spoilerid_2.catalog__filter-spoiler(type='checkbox')
+				label(for='spoilerid_2')
+					| Вид топлива
+				.catalog__filter-body
+					label.catalog__filter-body-control
+						span Основное топливо
+						input.catalog__filter-body-control-checkbox(type='checkbox')
+						.catalog__filter-body-indicator
+					label.catalog__filter-body-control
+						span Резервное
+						input.catalog__filter-body-control-checkbox(type='checkbox' checked='')
+						.catalog__filter-body-indicator
+
+			.catalog__body
+				.catalog__body-items
+					a.catalog__body-items-item
+						h4a.catalog__body-items-item-title Твердотоплевный котел WIRT Basis(Electro) 35
+						pa.catalog__body-items-item-article Артикул: Basis 35
+						.catalog-item-picture-wrap
+							.catalog-item-picture
+								img(src='img/catalog-1.svg' alt='')
+						.btn.btn--catalog-item(href='card-product.html') Выбрать
+
+					a.catalog__body-items-item
+						h4a.catalog__body-items-item-title Твердотоплевный котел WIRT Basis(Electro) 35
+						pa.catalog__body-items-item-article Артикул: Basis 35
+						.catalog-item-picture-wrap
+							.catalog-item-picture
+								img(src='img/catalog-1.svg' alt='')
+						.btn.btn--catalog-item(href='card-product.html') Выбрать
+
+					a.catalog__body-items-item
+						h4a.catalog__body-items-item-title Твердотоплевный котел WIRT Basis(Electro) 35
+						pa.catalog__body-items-item-article Артикул: Basis 35
+						.catalog-item-picture-wrap
+							.catalog-item-picture
+								img(src='img/catalog-1.svg' alt='')
+						.btn.btn--catalog-item(href='card-product.html') Выбрать
+
+					a.catalog__body-items-item
+						h4a.catalog__body-items-item-title Твердотоплевный котел WIRT Basis(Electro) 35
+						pa.catalog__body-items-item-article Артикул: Basis 35
+						.catalog-item-picture-wrap
+							.catalog-item-picture
+								img(src='img/catalog-1.svg' alt='')
+						.btn.btn--catalog-item(href='card-product.html') Выбрать
+
+					a.catalog__body-items-item
+						h4a.catalog__body-items-item-title Твердотоплевный котел WIRT Basis(Electro) 35
+						pa.catalog__body-items-item-article Артикул: Basis 35
+						.catalog-item-picture-wrap
+							.catalog-item-picture
+								img(src='img/catalog-1.svg' alt='')
+						.btn.btn--catalog-item(href='card-product.html') Выбрать
+
+					a.catalog__body-items-item
+						h4a.catalog__body-items-item-title Твердотоплевный котел WIRT Basis(Electro) 35
+						pa.catalog__body-items-item-article Артикул: Basis 35
+						.catalog-item-picture-wrap
+							.catalog-item-picture
+								img(src='img/catalog-1.svg' alt='')
+						.btn.btn--catalog-item(href='card-product.html') Выбрать

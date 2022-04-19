@@ -1,0 +1,24 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+
+	.main-inner
+		.container.center
+			.log-in
+				.log-in__title Введите код
+				form.log-in__form.grid
+					.log-in__form-field
+						input.log-in__form-text(type='text')
+
+					.log-in__buttons
+						.btn--forgot.btn.btn--grey(type='submit' data-remodal-target='modal' ) Назад
+						.btn--forgot.btn.btn-mob-first(type='submit' data-remodal-target='modal' ) Далее

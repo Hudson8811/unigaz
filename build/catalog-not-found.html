@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!--title= `${page.title}`-->
+  </head>
+  <body>
+    <!--.sh-burger
+    span
+    
+    -->
+    <!--header.container.header.grid.mb80
+    .logo
+    	img(class="logo__img", src="img/logo.svg", alt="")
+    .menu
+    	ul(class="menu__items")
+    		li(class="menu__items-item")
+    			a(class="menu__items-item-link", href="catalog/") Каталог продукции
+    		li(class="menu__items-item")
+    			a(class="menu__items-item-link", href="lk.html") Информация
+    .icons
+    	ul(class="icons__items")
+    		li(class="icons__items-item")
+    			a(class="icons__items-item-link", href="")
+    				img(class="icons__items-item-img", src="img/user-b.svg", alt="")
+    		li(class="icons__items-item")
+    			a(class="icons__items-item-link", href="")
+    				img(class="icons__items-item-img", src="img/cart-b.svg", alt="")
+    .icons-2
+    	ul(class="icons-2__items")
+    		li(class="icons-2__items-item")
+    			a(class="icons-2__items-item-link", href="")
+    				img(class="icons-2__items-item-img", src="img/logon-b.svg", alt="")
+    -->
+    <header class="site-header site-header--dark-bg site-header--absolute">
+      <div class="container container--sh"><a class="sh-logo" href=""><img class="sh-logo__img sh-logo__img--dark" src="img/logo.svg" alt=""><img class="sh-logo__img sh-logo__img--white" src="img/logo-w.svg" alt=""></a>
+        <div class="sh-menu"><a class="sh-menu__item sh-menu__item--bold" href="">Каталог продукции</a><a class="sh-menu__item" href="">Информация</a></div>
+        <div class="sh-right"><a class="sh-right__item sh-right__item--cab" href="">
+            <div class="sh-right__icon"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.3972 8.07026C10.7152 8.51262 9.91123 8.75 9.08696 8.75C7.98111 8.75 6.92488 8.32333 6.14951 7.57062C5.3749 6.81865 4.94398 5.80357 4.94398 4.75C4.94398 3.96391 5.18399 3.19357 5.6364 2.53627C6.08901 1.87869 6.73469 1.36287 7.4943 1.05742C8.25409 0.751907 9.09135 0.671648 9.89933 0.827668C10.7072 0.983671 11.4464 1.36822 12.0244 1.92938C12.6022 2.49031 12.9931 3.20224 13.1512 3.97387C13.3093 4.74534 13.2283 5.54524 12.9176 6.27341C12.6068 7.00184 12.0789 7.62806 11.3972 8.07026ZM0.75 16.2857C0.75 14.9461 1.88716 13.7762 3.72999 12.8942C5.52266 12.0361 7.68387 11.6071 9.08696 11.6071C10.49 11.6071 12.6513 12.0361 14.4439 12.8942C16.2868 13.7762 17.4239 14.9461 17.4239 16.2857V18C17.4239 18.1381 17.312 18.25 17.1739 18.25H1C0.861928 18.25 0.75 18.1381 0.75 18V16.2857Z" stroke="#231F20" stroke-width="1.5"/>
+</svg>
+
+            </div></a><a class="sh-right__item sh-right__item--cart" href="">
+            <div class="sh-right__icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+	<path d="M10.1707 6.68225L7.83359 6.68225C6.11673 6.68225 4.54489 7.64499 3.76475 9.17436V9.17436C3.6163 9.46538 3.4995 9.7715 3.41635 10.0874L1.17383 18.609" stroke="#231F20" stroke-width="1.5" stroke-linecap="round"/>
+	<path d="M9.69696 6.68225L12.0341 6.68225C13.7509 6.68225 15.3228 7.64499 16.1029 9.17436V9.17436C16.2514 9.46538 16.3682 9.7715 16.4513 10.0874L18.6938 18.609" stroke="#231F20" stroke-width="1.5" stroke-linecap="round"/>
+	<path d="M6.85596 8.76869V3.39324C6.85596 2.84981 7.04091 2.32255 7.38039 1.8982V1.8982C7.83456 1.33048 8.52217 1 9.2492 1H11.2597C11.8225 1 12.3622 1.22356 12.7602 1.6215V1.6215C13.1581 2.01943 13.3817 2.55915 13.3817 3.12192V8.76869" stroke="#231F20" stroke-width="1.5" stroke-linecap="round"/>
+	<path d="M1.17383 18.9938H18.2206" stroke="#231F20" stroke-width="1.5" stroke-linecap="round"/>
+	</svg>
+              <div class="sh-cart-circle"><span>0</span></div>
+            </div></a><a class="sh-right__item sh-right__item--exit" href="">
+            <div class="sh-right__icon"><svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.8597 5.75L25.5882 10.5M25.5882 10.5L20.8597 15.25M25.5882 10.5H9.45221M17.0769 5.75V3.375C17.0769 2.74511 16.8278 2.14102 16.3844 1.69562C15.9411 1.25022 15.3397 1 14.7127 1H3.36425C2.73721 1 2.13586 1.25022 1.69247 1.69562C1.24909 2.14102 1 2.74511 1 3.375V17.625C1 18.2549 1.24909 18.859 1.69247 19.3044C2.13586 19.7498 2.73721 20 3.36425 20H14.7127C15.3397 20 15.9411 19.7498 16.3844 19.3044C16.8278 18.859 17.0769 18.2549 17.0769 17.625V15.25V5.75Z" stroke="#231F20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+            </div></a></div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container-fullwidth top-bg">
+        <div class="top-bg__overlay"></div>
+        <div class="top-bg__overlay-2"></div>
+        <div class="container">
+          <div class="catalog-title">Каталог<br>продукции</div>
+        </div>
+      </div>
+      <div class="main-inner main-inner--v2">
+        <div class="container search grid">
+          <div class="search__title">
+            <h3 class="search__title-text">Поиск по котлам</h3>
+          </div>
+          <div class="search__form">
+            <div class="search__form-field">
+              <input class="search__form-field-input" type="text" placeholder="Наименование котла">
+              <submit class="btn btn--search-submit">Поиск</submit>
+            </div>
+          </div>
+        </div>
+        <div class="container catalog">
+          <div class="catalog__filter">
+            <input class="catalog__filter-spoiler" id="spoilerid_1" type="checkbox">
+            <label for="spoilerid_1"> Производитель</label>
+            <div class="catalog__filter-body">
+              <label class="catalog__filter-body-control"><span>Производитель 1</span>
+                <input class="catalog__filter-body-control-checkbox" type="checkbox">
+                <div class="catalog__filter-body-indicator"></div>
+              </label>
+              <label class="catalog__filter-body-control"><span>Производитель 2</span>
+                <input class="catalog__filter-body-control-checkbox" type="checkbox" checked="">
+                <div class="catalog__filter-body-indicator"></div>
+              </label>
+              <label class="catalog__filter-body-control"><span>Производитель 3</span>
+                <input class="catalog__filter-body-control-checkbox" type="checkbox">
+                <div class="catalog__filter-body-indicator"></div>
+              </label>
+              <label class="catalog__filter-body-control"><span>Производитель 4</span>
+                <input class="catalog__filter-body-control-checkbox" type="checkbox">
+                <div class="catalog__filter-body-indicator"></div>
+              </label>
+              <label class="catalog__filter-body-control"><span>Производитель 5</span>
+                <input class="catalog__filter-body-control-checkbox" type="checkbox">
+                <div class="catalog__filter-body-indicator"></div>
+              </label>
+              <label class="catalog__filter-body-control"><span>Производитель 6</span>
+                <input class="catalog__filter-body-control-checkbox" type="checkbox">
+                <div class="catalog__filter-body-indicator"></div>
+              </label>
+            </div>
+            <input class="catalog__filter-spoiler" id="spoilerid_2" type="checkbox">
+            <label for="spoilerid_2">Вид топлива</label>
+            <div class="catalog__filter-body">
+              <label class="catalog__filter-body-control"><span>Основное топливо</span>
+                <input class="catalog__filter-body-control-checkbox" type="checkbox">
+                <div class="catalog__filter-body-indicator"></div>
+              </label>
+              <label class="catalog__filter-body-control"><span>Резервное</span>
+                <input class="catalog__filter-body-control-checkbox" type="checkbox" checked="">
+                <div class="catalog__filter-body-indicator"></div>
+              </label>
+            </div>
+          </div>
+          <div class="catalog__body">
+            <div class="not-found not-found_mt80">
+              <div class="not-found__title">Не найдена нужная модель котла?</div>
+              <p class="not-found__desc">Отправьте запрос, и наши менеджеры свяжутся с вами для подбора необходимой модели</p><a class="btn btn--not-found" data-remodal-target="modal" href="">Отправить запрос</a>
+            </div>
+          </div>
+        </div>
+        <!--.remodal.selection(data-remodal-id='modal' data-remodal-options='hashTracking: false, closeOnOutsideClick: true')
+        button.remodal-close(data-remodal-action='close')
+        .prev-h1 Запрос на подбор горелки
+        .selection
+        	.selection__form.grid
+        		.selection__form-field
+        			label.selection__form-label Ваше имя
+        			input.selection__form-text(type='text' placeholder='Анастасия')
+        		.selection__form-field
+        			label.selection__form-label Ваша фамилия
+        			input.selection__form-text(type='text' placeholder='Штофа')
+        		.selection__form-field
+        			label.selection__form-label Ваш e-mail
+        			input.selection__form-text(type='text' placeholder='ivanov@ipau.ru')
+        		.selection__form-field
+        			label.selection__form-label Ваш e-mail
+        			input.selection__form-text(type='text' placeholder='+ 7 (910) 000-00-00')
+        	.selection__form.grid
+        		.selection__form-field
+        			label.selection__form-label Тип и модель котла
+        			input.selection__form-text(type='text' placeholder='WIRT Basis (Electro) 35')
+        		.selection__form-field
+        			label.selection__form-label Мощность, кВт/произ-ть, кг/ч
+        			input.selection__form-text(type='text' placeholder='500')
+        		.selection__form-field
+        			label.selection__form-label Город установки
+        			input.selection__form-text(type='text' placeholder='Прага')
+        		.selection__form-field
+        			label.selection__form-label Давление газа
+        			input.selection__form-text(type='text' placeholder='452')
+        	br
+        	.selection__form-field
+        		label.selection__form-label Загрузите файл или изображение
+        		.input-file
+        			input.input-file__text(type='file')
+        br
+        br
+        button.remodal-confirm(data-remodal-action='confirm' data-remodal-target='modal-2') Согласен
+        -->
+        <div class="remodal" data-remodal-id="modal-2" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+          <button class="remodal-close" data-remodal-action="close"></button>
+          <div class="prev-h1">Заявка отправлена</div>
+          <p>Спасибо, ваш заказ принят в обработку, менеджер свяжется с вами в ближайшее время</p><br><br>
+          <button class="remodal-confirm" data-remodal-action="confirm">Закрыть</button>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+  <!---->
+</html>

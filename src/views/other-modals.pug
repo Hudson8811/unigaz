@@ -1,0 +1,73 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	.main-inner
+		.container
+			.log-in__buttons
+				input.log-in__buttons-submit-link.btn(type='submit' data-remodal-target='modal-zapros' value='Запрос')
+
+	.remodal.remodal--zapros-gorelki(data-remodal-id='modal-zapros' data-remodal-options='hashTracking: false, closeOnOutsideClick: true')
+		button.remodal-close(data-remodal-action="close"  aria-label="Close")
+		.modal-title Запрос на подбор горелки
+		form.form-zapros-gorelki
+			.inputs-row
+				.inputs-row__col.inputs-row__col--50
+					.log-in__form-field
+						label.log-in__form-label Ваше имя
+						input.log-in__form-text.log-in__form-text--small-h(type='text' placeholder="Анастасия")
+
+				.inputs-row__col.inputs-row__col--50
+					.log-in__form-field
+						label.log-in__form-label Ваша фамилия
+						input.log-in__form-text.log-in__form-text--small-h(type='text' placeholder="Штофа")
+
+			.inputs-row
+				.inputs-row__col.inputs-row__col--50
+					.log-in__form-field
+						label.log-in__form-label Ваш e-mail
+						input.log-in__form-text.log-in__form-text--small-h(type='text' placeholder="ivanov@ipau.ru")
+
+				.inputs-row__col.inputs-row__col--50
+					.log-in__form-field
+						label.log-in__form-label Ваш номер телефона
+						input.log-in__form-text.log-in__form-text--small-h(type='text' placeholder="+ 7 (910) 000-00-00")
+
+			.inputs-row.inputs-row--big-mt
+				.inputs-row__col.inputs-row__col--50
+					.log-in__form-field
+						label.log-in__form-label Тип и модель котла
+						input.log-in__form-text.log-in__form-text--small-h(type='text' placeholder="WIRT Basis (Electro) 35")
+
+				.inputs-row__col.inputs-row__col--50
+					.log-in__form-field
+						label.log-in__form-label Мощность, кВт/произ-ть, кг/ч
+						input.log-in__form-text.log-in__form-text--small-h(type='text' placeholder="500")
+
+			.inputs-row
+				.inputs-row__col.inputs-row__col--50
+					.log-in__form-field
+						label.log-in__form-label Город установки
+						input.log-in__form-text.log-in__form-text--small-h(type='text' placeholder="Прага")
+
+				.inputs-row__col.inputs-row__col--50
+					.log-in__form-field
+						label.log-in__form-label Давление газа
+						input.log-in__form-text.log-in__form-text--small-h(type='text' placeholder="452")
+
+			.inputs-row
+				.inputs-row__col
+					.log-in__form-field
+						label.log-in__form-label Загрузите файл или изображение
+						.input-file
+							input.input-file__text(type='file')
+
+			button.btn.btn--form-zapros-gorelki(type="submit") Отправить

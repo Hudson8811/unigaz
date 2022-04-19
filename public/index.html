@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UNIGAS</title>
+	<base href="https://m5446.gitlab.io/unigaz/">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/remodal.css">
+	<link rel="stylesheet" href="css/remodal-default-theme.css">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body>
+	<header class="container">
+		<div class="logo">
+			<img class="logo__img" src="img/logo.svg" alt="">
+		</div>
+	</header>
+	<div class="container center">
+		<div class="log-in">
+			<h1 class="log-in__title">Вход</h1>
+			<form class="log-in__form grid">
+				<div class="log-in__form-field">
+					<label class="log-in__form-label">Логин</label>
+					<input class="log-in__form-text" type="text">
+				</div>
+				<div class="log-in__form-field">
+					<label class="log-in__form-label">Пароль</label>
+					<input class="log-in__form-text" type="text">
+				</div>
+				<div class="log-in__buttons grid">
+					<input class="log-in__buttons-submit-link" type="submit" data-remodal-target="modal" value="Вход">
+					<a class="log-in__buttons-forgot" href="forgot/">Забыли пароль?</a>
+				</div>
+				<div class="log-in__recaptcha">
+					<img class="log-in__recaptcha-img" src="img/recaptcha.png" alt="">
+					<div class="log-in__recaptcha-body center">
+						<div class="g-recaptcha" data-sitekey="6Le3wvEdAAAAAEt1jo1idI-sVT6VFRIHkuEwuQAG"></div>
+
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+		<h1>Обратите внимание</h1>
+		<p>
+			Клиент несет личную ответственность за выполняемые действия в личном кабинете, в том числе за оплату товаров.
+		</p>
+		<br>
+		<button data-remodal-action="confirm" class="remodal-confirm">Согласен</button>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/remodal.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
